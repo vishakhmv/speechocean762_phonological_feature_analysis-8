@@ -1,0 +1,16 @@
+==================================================
+DATASET SUMMARY
+==================================================
+Utterances processed: 5000
+Words processed:      31816
+Mispronunciations:    3403
+Missing can. phones:  1700
+Missing pron. phones: 2901
+Skipped (inv score):  0
+Skipped (inv index):  0
+
+CSV files generated:  15
+PNG files generated:  15
+==================================================
+HISTOGRAM EXPORT
+==================================================
