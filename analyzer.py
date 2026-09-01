@@ -92,9 +92,12 @@ def run_analysis() -> None:
                 
                 can_type = can_f.get("TYPE")
                 if can_type == "C":
-                    # Voicing comparison: binary complementary feature
+                    # Voicing comparison: attribute error based on canonical consonant voicing
                     if can_f.get("VOICE") != pron_f.get("VOICE"):
-                        consonant_mispro_hists["VOICING"][score] += 1
+                        if can_f.get("VOICE") == 1.0:
+                            consonant_mispro_hists["VOICED"][score] += 1
+                        else:
+                            consonant_mispro_hists["UNVOICED"][score] += 1
                         
                     # Place of articulation: attribute error to target place
                     can_place = next((p for p in PLACES if can_f.get(p) == 1.0), None)

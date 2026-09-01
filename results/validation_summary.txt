@@ -9,8 +9,8 @@ Missing pron. phones: 2901
 Skipped (inv score):  0
 Skipped (inv index):  0
 
-CSV files generated:  15
-PNG files generated:  15
+CSV files generated:  16
+PNG files generated:  16
 ==================================================
 HISTOGRAM EXPORT
 ==================================================
